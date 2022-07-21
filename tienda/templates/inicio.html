@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<header>
+        <div class="ImagenLogo">
+            <img src="" alt="LOGO" />
+        </div>
+ </header>
+<body>
+<div>
+        <table>
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre de producto</th>
+                <th>Precio</th>
+                <th>Categoria</th>
+                <th>Ver</th>
+                <th>Editar</th>
+
+            </tr>
+
+            </thead>
+            <tbody>
+            {% for p in productos %}
+            <tr>
+                <td>{{p.id}}</td>
+                <td>{{p.nombreproducto}}</td>
+                <td>{{p.precio}}</td>
+                <td>{{p.categoria}}</td>
+                <td>Ver detalle</td>
+                <td>Editar</td>
+                <td>Eliminar</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+</html>
